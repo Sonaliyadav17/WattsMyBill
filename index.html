@@ -1,0 +1,51 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <title>BSES Bill Calculator</title>
+  <link rel="stylesheet" href="style.css">
+</head>
+<body>
+
+<div class="container">
+  <h2>BSES Electricity Bill Calculator</h2>
+
+  <label for="units">Units Consumed</label>
+  <input type="number" id="units" placeholder="e.g. 136">
+
+  <label for="load">Sanctioned Load (in kW)</label>
+  <input type="number" id="load" placeholder="e.g. 2">
+
+  <label for="ppac">PPAC %</label>
+  <input type="number" id="ppac" placeholder="e.g. 35.82">
+
+  <label for="other">Other Charges (₹)</label>
+  <input type="number" id="other" placeholder="e.g. 82.59">
+
+  <button onclick="calculateBill()">Calculate Bill</button>
+
+  <div class="result" id="result"></div>
+</div>
+<div class="background-blobs"></div>
+<div class="disclaimer">
+  ⚠️ <b>Disclaimer:</b> This is a simulated calculator. Actual bill amounts may vary based on real-time tariff changes, meter readings, subsidies, and BSES billing policies.
+</div>
+
+<script src="script.js">
+
+  // Apply 'filled' class when input has value
+  document.querySelectorAll('input').forEach(input => {
+    input.addEventListener('input', () => {
+      if (input.value.trim() !== '') {
+        input.classList.add('filled');
+      } else {
+        input.classList.remove('filled');
+      }
+    });
+  });
+</script>
+
+
+
+</body>
+</html>
