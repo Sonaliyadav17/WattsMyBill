@@ -31,7 +31,7 @@ This is an approximate tool. Real bills may vary as per BSES rules, meter readin
 ---
 
 ## 📌 Live Demo
-[🔗 View Live](#) https://sonaliyadav17.github.io/WattsMyBill/
+[🔗 View Live] https://sonaliyadav17.github.io/WattsMyBill/
 
 ---
 
