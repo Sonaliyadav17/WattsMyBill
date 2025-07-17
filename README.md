@@ -35,5 +35,5 @@ This is an approximate tool. Real bills may vary as per BSES rules, meter readin
 
 ---
 
-## 👩‍💻 Author
+## 👩‍💻  Developer
 **Sonali Yadav** – Crafted with logic & love 🧠❤️
